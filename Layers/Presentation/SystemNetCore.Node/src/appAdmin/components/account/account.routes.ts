@@ -1,6 +1,6 @@
 import { Route, RouterModule } from '@angular/router';
 
-import { AccountGuard } from '../../shared/guards/account.guard';
+import { AccountGuard } from './guards/account.guard';
 import { LoginComponent } from './login/login.component';
 import { RecoverPasswordComponent } from './recover-password/recover-password.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';

@@ -9,7 +9,7 @@ import {UserEditComponent} from './user/user-edit.component';
 import { RoleListComponent } from './role/role-list.component';
 import { RoleDetailComponent } from './role/role-detail.component';
 import { RoleEditComponent } from './role/role-edit.component';
-import {AdminGuard} from '../../shared/guards/admin.guard';
+import {AdminGuard} from './guards/admin.guard';
 
 export const AdminRoutes: Route[] = [
     {

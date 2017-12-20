@@ -86,6 +86,7 @@
     <Folder Include="src\appAdmin\assets\fonts\" />
     <Folder Include="src\appAdmin\components\" />
     <Folder Include="src\appAdmin\components\account\" />
+    <Folder Include="src\appAdmin\components\account\guards\" />
     <Folder Include="src\appAdmin\components\account\login\" />
     <Folder Include="src\appAdmin\components\account\recover-password\" />
     <Folder Include="src\appAdmin\components\account\reset-password\" />
@@ -93,13 +94,13 @@
     <Folder Include="src\appAdmin\components\admin\" />
     <Folder Include="src\appAdmin\components\admin\change-password\" />
     <Folder Include="src\appAdmin\components\admin\dashboard\" />
+    <Folder Include="src\appAdmin\components\admin\guards\" />
     <Folder Include="src\appAdmin\components\admin\models\" />
     <Folder Include="src\appAdmin\components\admin\role\" />
     <Folder Include="src\appAdmin\components\admin\services\" />
     <Folder Include="src\appAdmin\components\admin\user\" />
     <Folder Include="src\appAdmin\shared\" />
     <Folder Include="src\appAdmin\shared\components\" />
-    <Folder Include="src\appAdmin\shared\guards\" />
     <Folder Include="src\appAdmin\shared\models\" />
     <Folder Include="src\appAdmin\shared\services\" />
     <Folder Include="src\appAdmin\shared\validators\" />
@@ -123,6 +124,7 @@
     <TypeScriptCompile Include="src\appAdmin\authConfig.ts" />
     <TypeScriptCompile Include="src\appAdmin\components\account\account.module.ts" />
     <TypeScriptCompile Include="src\appAdmin\components\account\account.routes.ts" />
+    <TypeScriptCompile Include="src\appAdmin\components\account\guards\account.guard.ts" />
     <TypeScriptCompile Include="src\appAdmin\components\account\login\login.component.ts" />
     <TypeScriptCompile Include="src\appAdmin\components\account\recover-password\recover-password.component.ts" />
     <TypeScriptCompile Include="src\appAdmin\components\account\reset-password\reset-password.component.ts" />
@@ -131,6 +133,7 @@
     <TypeScriptCompile Include="src\appAdmin\components\admin\admin.routes.ts" />
     <TypeScriptCompile Include="src\appAdmin\components\admin\change-password\change-password.component.ts" />
     <TypeScriptCompile Include="src\appAdmin\components\admin\dashboard\dashboard.component.ts" />
+    <TypeScriptCompile Include="src\appAdmin\components\admin\guards\admin.guard.ts" />
     <TypeScriptCompile Include="src\appAdmin\components\admin\models\base-entity.ts" />
     <TypeScriptCompile Include="src\appAdmin\components\admin\models\dictionary.ts" />
     <TypeScriptCompile Include="src\appAdmin\components\admin\models\pagination-result.ts" />
@@ -150,8 +153,6 @@
     <TypeScriptCompile Include="src\appAdmin\globals.ts" />
     <TypeScriptCompile Include="src\appAdmin\main-admin.ts" />
     <TypeScriptCompile Include="src\appAdmin\shared\components\header.component.ts" />
-    <TypeScriptCompile Include="src\appAdmin\shared\guards\account.guard.ts" />
-    <TypeScriptCompile Include="src\appAdmin\shared\guards\admin.guard.ts" />
     <TypeScriptCompile Include="src\appAdmin\shared\models\menu-item.ts" />
     <TypeScriptCompile Include="src\appAdmin\shared\services\authentication.service.ts" />
     <TypeScriptCompile Include="src\appAdmin\shared\services\menu.service.ts" />

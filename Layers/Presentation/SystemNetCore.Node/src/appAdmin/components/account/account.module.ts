@@ -7,7 +7,7 @@ import { RecoverPasswordComponent } from './recover-password/recover-password.co
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { VerificationEmailComponent } from './verification-email/verification-email.component';
 import accountRoutes from './account.routes';
-import { AccountGuard } from '../../shared/guards/account.guard';
+import { AccountGuard } from './guards/account.guard';
 
 @NgModule({
     imports: [

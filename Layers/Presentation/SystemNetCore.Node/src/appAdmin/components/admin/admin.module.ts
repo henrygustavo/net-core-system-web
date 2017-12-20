@@ -14,7 +14,7 @@ import {ChangePasswordComponent} from './change-password/change-password.compone
 import {UserService} from './services/user.service';
 import {RoleService} from './services/role.service';
 import {UtilService} from './services/util.service';
-import {AdminGuard} from '../../shared/guards/admin.guard';
+import {AdminGuard} from './guards/admin.guard';
 import AdminRoutes from './admin.routes';
 
 @NgModule({
