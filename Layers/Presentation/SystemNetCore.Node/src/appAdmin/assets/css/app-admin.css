@@ -1,0 +1,92 @@
+.ngViewport {
+    overflow: auto;
+    min-height: 200px;
+}
+
+input[type="text"].ng-invalid-date {
+    border: 1px solid red !important;
+}
+
+.gridStyle {
+    border: 1px solid rgb(212, 212, 212);
+    height: 400px;
+}
+
+.gallery {
+    padding: 10px;
+}
+
+.gallery li {
+    display: inline-block;
+    margin: 0 1em 1em 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .gallery li {
+        margin: 0;
+    }
+}
+
+.gallery1 img {
+    width: 100px;
+    height: 100px;
+}
+
+.gallery2 img {
+    width: 6em;
+}
+
+.gallery5 img {
+    width: 120px;
+}
+
+.img-thumbnail:active {
+    background-color: #f0ad4e;
+}
+
+.img-thumbnailActive {
+    background-color: #f0ad4e !important;
+}
+
+.activeView {
+    background-color: #eee;
+    color: #23527c;
+}
+
+.highlight {
+    color: #a94442;
+}
+
+
+/* ====== ====== */
+
+.ta-editor.form-control.myform2-height,
+.ta-scroll-window.form-control.myform2-height {
+    height: 1024px;
+    min-height: 1024px;
+    overflow: auto;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+.form-control.myform2-height>.ta-bind {
+    min-height: 1024px;
+    padding: 6px 12px;
+}
+
+.ngx-datatable.material .datatable-footer {
+
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.ngx-datatable.material{
+    box-shadow: 0 0 0 0 !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}

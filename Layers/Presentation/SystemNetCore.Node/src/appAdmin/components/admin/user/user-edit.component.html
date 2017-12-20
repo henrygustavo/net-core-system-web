@@ -1,0 +1,88 @@
+<div id="page-wrapper" *ngIf="mainForm">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Users</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <form novalidate (ngSubmit)="save()" [formGroup]="mainForm">
+        <div class="row">
+            <div class="col-md-4 well col-lg-offset-4">
+                <div class="form-group">
+                    <div [ngClass]="{'has-error': displayMessage.userName }">
+                        <input class="form-control" placeholder="User Name" formControlName="userName" />
+                        <span class="help-block" *ngIf="displayMessage.userName">
+                            {{displayMessage.userName}}
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div [ngClass]="{'has-error': displayMessage.email }">
+                        <input class="form-control" type="email" placeholder="Email" formControlName="email" />
+                        <span class="help-block" *ngIf="displayMessage.email">
+                            {{displayMessage.email}}
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div [ngClass]="{'has-error': displayMessage.phoneNumber }">
+                        <input class="form-control" placeholder="Phone Number" formControlName="phoneNumber" />
+                        <span class="help-block" *ngIf="displayMessage.phoneNumber">
+                            {{displayMessage.phoneNumber}}
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div [ngClass]="{'has-error': displayMessage.password }">
+                        <input class="form-control" type="password" placeholder="Password" formControlName="password" />
+                        <span class="help-block" *ngIf="displayMessage.password">
+                            {{displayMessage.password}}
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div [ngClass]="{'has-error': displayMessage.confirmPassword }">
+                        <input class="form-control" type="password" placeholder="Confirm Password" formControlName="confirmPassword" />
+                        <span class="help-block" *ngIf="displayMessage.confirmPassword">
+                            {{displayMessage.confirmPassword}}
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div [ngClass]="{'has-error': displayMessage.idRole }">
+                        <select  formControlName="idRole" class="form-control">
+                            <option *ngFor="let role of roles" [value]="role.key">{{ role.value }}</option>
+                        </select>
+                        <span class="help-block" *ngIf="displayMessage.idRole">
+                            {{displayMessage.idRole}}
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="disabled" formControlName="disabled">Disabled</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="lockoutEnabled" formControlName="lockoutEnabled">LockOut Enabled</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 well col-lg-offset-4">
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <a [routerLink]="['/users']" class="btn btn-default btn-block">Back</a>
+                    </div>
+                    <div class="col-md-9">
+                        <button type="submit" class="btn btn-primary btn-block" [disabled]="!mainForm.valid">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- /#page-wrapper -->

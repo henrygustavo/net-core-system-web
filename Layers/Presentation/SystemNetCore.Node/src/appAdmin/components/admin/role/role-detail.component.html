@@ -1,0 +1,31 @@
+<div id="page-wrapper" *ngIf="mainForm">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Roles</h1>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+        <form [formGroup]="mainForm">
+            <div class="row">
+                <div class="col-md-4 well col-lg-offset-4">
+                    <div class="form-group">
+                        <input class="form-control" formControlName="name" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 well col-lg-offset-4">
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            <a [routerLink]="['/roles']" class="btn btn-default btn-block">Back</a>
+                        </div>
+                        <div class="col-md-9">
+                            <a [routerLink] = "['/roles','edit',mainForm.controls.id.value]" class="btn btn-primary btn-block">Edit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- /#page-wrapper -->
